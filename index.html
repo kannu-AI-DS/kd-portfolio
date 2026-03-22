@@ -15,7 +15,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
 nav {
   position: fixed;
   width: 100%;
@@ -25,7 +24,6 @@ nav {
   justify-content: center;
   gap: 30px;
   padding: 15px;
-  z-index: 100;
 }
 
 nav a {
@@ -33,7 +31,6 @@ nav a {
   text-decoration: none;
 }
 
-/* HEADER */
 header {
   text-align: center;
   padding: 120px 20px;
@@ -56,22 +53,12 @@ header {
   50% { opacity: 0; }
 }
 
-/* SECTION */
 section {
   padding: 80px 20px;
   max-width: 1100px;
   margin: auto;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.8s;
 }
 
-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* BOX */
 .box {
   background: rgba(255,255,255,0.05);
   padding: 25px;
@@ -127,14 +114,13 @@ section.show {
 .label {
   position: absolute;
   top: 10px;
-  padding: 5px 10px;
   background: rgba(0,0,0,0.6);
+  padding: 5px 10px;
 }
 
 .before { left: 10px; }
 .after-text { right: 10px; }
 
-/* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -146,13 +132,11 @@ section.show {
   border-radius: 12px;
 }
 
-/* VIDEO */
 video {
   width: 100%;
   border-radius: 12px;
 }
 
-/* BUTTON */
 .btn {
   padding: 10px 20px;
   background: #72383D;
@@ -161,7 +145,6 @@ video {
   border-radius: 8px;
 }
 
-/* WHATSAPP */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -169,32 +152,18 @@ video {
   background: #25D366;
   padding: 15px;
   border-radius: 50%;
-  text-decoration: none;
-  transition: 0.3s;
 }
 
-.whatsapp:hover {
-  transform: scale(1.1);
-}
-
-/* INSTAGRAM */
 .instagram {
   position: fixed;
   bottom: 80px;
   right: 20px;
   background: #E1306C;
-  color: white;
   padding: 15px;
   border-radius: 50%;
-  text-decoration: none;
-  transition: 0.3s;
+  color: white;
 }
 
-.instagram:hover {
-  transform: scale(1.1);
-}
-
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -211,7 +180,7 @@ footer {
 </nav>
 
 <header>
-  <img src="file:///C:/Users/ASUS/OneDrive/all/myself/ccc89d65-5369-419a-9a5b-168993e30e60.png" class="logo">
+  <img src="ccc89d65-5369-419a-9a5b-168993e30e60.png" class="logo">
   <h1>KD KANNU DESIGNS</h1>
   <p class="typing" id="typing"></p>
 </header>
@@ -219,7 +188,7 @@ footer {
 <section id="about">
   <h2>About</h2>
   <div class="box">
-    <p>I create modern and luxury designs.</p>
+    <p>I create modern and luxury UI, logos and digital designs.</p>
   </div>
 </section>
 
@@ -231,7 +200,8 @@ footer {
       <li>Poster Design</li>
       <li>Logo Design</li>
       <li>Video Editing</li>
-      <li>Resume Design</li>
+      <li>ATS Resume</li>
+      <li>Certificate Design</li>
     </ul>
   </div>
 </section>
@@ -241,10 +211,10 @@ footer {
   <div class="box">
     <div class="slider-container">
 
-      <img src="C:\Users\ASUS\OneDrive\all\myself\WhatsApp Image 2026-03-22 at 4.30.33 PM (1).jpeg" class="before-img">
+      <img src="WhatsApp Image 2026-03-22 at 4.30.33 PM (1).jpeg" class="before-img">
 
       <div class="after-img" id="after">
-        <img src="C:\Users\ASUS\OneDrive\all\myself\WhatsApp Image 2026-03-22 at 4.30.33 PM.jpeg">
+        <img src="WhatsApp Image 2026-03-22 at 4.30.33 PM.jpeg">
       </div>
 
       <span class="label before">Before</span>
@@ -261,31 +231,21 @@ footer {
 <section>
   <h2>My Work</h2>
   <div class="box gallery">
-    <img src="file:///C:/Users/ASUS/OneDrive/all/CLIENT/LOGO 6.png">
-    <img src="file:///C:/Users/ASUS/OneDrive/all/CLIENT/MOCKUP 5.jpg">
-  </div>
-</section>
-
-<section>
-  <h2>Prototype</h2>
-  <div class="box">
-    <video controls>
-      <source src="file:///C:/Users/ASUS/OneDrive/Videos/ZA.mp4">
-    </video>
+    <img src="MOCKUP 5.jpg">
   </div>
 </section>
 
 <section>
   <h2>Resume</h2>
   <div class="box">
-    <a href="file:///C:/Users/ASUS/OneDrive/all/resume client/jo CV.pdf" class="btn">View Resume</a>
+    <a href="jo CV.pdf" class="btn">View Resume</a>
   </div>
 </section>
 
 <section>
   <h2>Certificate</h2>
   <div class="box">
-    <a href="file:///C:/Users/ASUS/OneDrive/all/resume client/certificate for 5 days .pdf" class="btn">View Certificate</a>
+    <a href="certificate for 5 days .pdf" class="btn">View Certificate</a>
   </div>
 </section>
 
@@ -302,21 +262,10 @@ footer {
   <p>© 2026 KD Kannu Designs</p>
 </footer>
 
-<!-- FLOAT BUTTONS -->
-<a href="https://wa.me/919566951885?text=Hi%20I%20saw%20your%20portfolio%20and%20want%20to%20work%20with%20you" target="_blank" class="whatsapp">💬</a>
-
+<a href="https://wa.me/919566951885?text=Hi%20I%20saw%20your%20portfolio" target="_blank" class="whatsapp">💬</a>
 <a href="https://ig.me/m/kd_kannu_designs" target="_blank" class="instagram">📸</a>
 
 <script>
-// SCROLL
-document.querySelectorAll("section").forEach(sec=>{
-  window.addEventListener("scroll",()=>{
-    if(sec.getBoundingClientRect().top < window.innerHeight-100){
-      sec.classList.add("show");
-    }
-  });
-});
-
 // SLIDER
 const slider = document.getElementById("sliderLine");
 const after = document.getElementById("after");
